@@ -4633,7 +4633,7 @@ static int copyfile_pack(copyfile_state_t s)
 		error = -1;
 		goto exit;
 	} else {
-		endnamebuf = ((char*)attrnamebuf) + ATTR_MAX_HDR_SIZE;
+		endnamebuf = attrnamebuf;
 	}
 
 	/*
